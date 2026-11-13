@@ -1,18 +1,48 @@
 <!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EDEKA Food Academy – Kataloge 2027</title>
+<meta name="theme-color" content="#2f3336">
+<link rel="icon" href="logo.jpg">
 <style>
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f4f7f2;color:#1d2b1f}
-header{background:#0b4a2a;color:#fff;padding:28px 20px;text-align:center}
-header h1{margin:0;font-size:1.6rem}header p{margin:6px 0 0;color:#ffd400;font-weight:600}
-main{max-width:900px;margin:28px auto;padding:0 16px;display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-a.card{display:block;background:#fff;border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:transform .15s}
-a.card:hover{transform:translateY(-4px)}
-a.card img{width:100%;aspect-ratio:3/4;object-fit:cover;background:#ddd;display:block}
-.t{padding:16px 18px}.t h2{margin:0 0 4px;font-size:1.2rem}.t span{color:#0b4a2a;font-weight:600}
-footer{text-align:center;color:#6a776c;font-size:.85rem;padding:20px}
+:root{--gold1:#ffe100;--gold2:#f5a800;--slate:#3a3e41}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:"Montserrat",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#fff;
+background-color:#34383b;
+background-image:
+ radial-gradient(ellipse at 20% 0%,rgba(255,255,255,.07),transparent 60%),
+ radial-gradient(ellipse at 90% 100%,rgba(0,0,0,.45),transparent 60%),
+ url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+ url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='turbulence' baseFrequency='.004 .012' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
+background-attachment:fixed}
+header{text-align:center;padding:36px 16px 10px}
+header img{width:min(720px,92vw);border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.55)}
+.sub{margin:26px 0 0;letter-spacing:.32em;text-transform:uppercase;font-weight:600;font-size:.95rem;color:#e9eaeb}
+.sub b{background:linear-gradient(90deg,var(--gold2),var(--gold1));-webkit-background-clip:text;background-clip:text;color:transparent}
+.line{width:70px;height:3px;margin:16px auto 0;border-radius:3px;background:linear-gradient(90deg,var(--gold2),var(--gold1))}
+main{max-width:920px;margin:30px auto 20px;padding:0 18px;display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+a.card{display:block;text-decoration:none;color:#fff;border-radius:20px;overflow:hidden;background:rgba(20,22,24,.55);
+border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(4px);box-shadow:0 14px 40px rgba(0,0,0,.45);transition:transform .2s,border-color .2s,box-shadow .2s}
+a.card:hover,a.card:focus-visible{transform:translateY(-6px);border-color:var(--gold1);box-shadow:0 20px 50px rgba(0,0,0,.6),0 0 0 2px rgba(255,225,0,.25);outline:none}
+.cover{aspect-ratio:3/4;overflow:hidden;background:#222}
+.cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+a.card:hover .cover img{transform:scale(1.04)}
+.t{padding:18px 20px 22px}
+.t h2{margin:0 0 6px;font-size:1.25rem;font-weight:800;letter-spacing:.02em}
+.t p{margin:0 0 14px;color:#c9cbcd;font-size:.92rem}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-weight:700;color:#1b1d1f;
+background:linear-gradient(90deg,var(--gold2),var(--gold1))}
+footer{text-align:center;color:#a9adb0;font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;padding:26px 16px 40px}
 </style></head><body>
-<header><h1>EDEKA Food Academy</h1><p>Kataloge 2027 – bitte auswählen</p></header>
+<header>
+<img src="logo.jpg" alt="EDEKA Food Academy Nordbayern · Sachsen · Thüringen">
+<p class="sub">Kataloge <b>2027</b></p><div class="line"></div>
+</header>
 <main>
-<a class="card" href="Seminarkatalog_2027.pdf" target="_blank"><img src="gross.jpg" alt="Titelseite Seminarkatalog 2027"><div class="t"><h2>Großer Seminarkatalog 2027</h2><span>PDF öffnen · 111 Seiten</span></div></a>
-<a class="card" href="Fresh_Katalog_2027.pdf" target="_blank"><img src="fresh.jpg" alt="Titelseite Fresh-Katalog 2027"><div class="t"><h2>Fresh-Katalog 2027</h2><span>Seminare für die Frischetheke · 43 Seiten</span></div></a>
-</main><footer>EDEKA Food Academy NST</footer></body></html>
+<a class="card" href="Seminarkatalog_2027.pdf" target="_blank" rel="noopener">
+<div class="cover"><img src="gross.jpg" alt="Titelseite Seminarkatalog 2027"></div>
+<div class="t"><h2>Seminarkatalog 2027</h2><p>Der große Katalog · alle Seminare · 111 Seiten</p><span class="btn">PDF öffnen ›</span></div></a>
+<a class="card" href="Fresh_Katalog_2027.pdf" target="_blank" rel="noopener">
+<div class="cover"><img src="fresh.jpg" alt="Titelseite Fresh-Katalog 2027"></div>
+<div class="t"><h2>Fresh-Katalog 2027</h2><p>Seminare für die Frischetheke · 43 Seiten</p><span class="btn">PDF öffnen ›</span></div></a>
+</main>
+<footer>Nordbayern · Sachsen · Thüringen</footer>
+</body></html>
